@@ -1,0 +1,11 @@
+package gradle;
+
+import org.checkerframework.checker.tainting.qual.Untainted;
+
+public class TaintStubSample {
+
+  public static void printUntaintedString(@Untainted String s) {
+    System.out.println(s);
+  }
+
+}
