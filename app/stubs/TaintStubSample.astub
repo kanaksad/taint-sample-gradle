@@ -1,10 +1,10 @@
 package gradle;
 
-import org.checkerframework.checker.tainting.qual.Untainted;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 public class TaintStubSample {
 
-  public static void printUntaintedString(@Untainted String s) {
+  public static void printUntaintedString(@RUntainted String s) {
     System.out.println(s);
   }
 
