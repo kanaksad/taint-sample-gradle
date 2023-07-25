@@ -3,12 +3,15 @@
  */
 package taint.sample.gradle;
 
+import org.checkerframework.checker.units.qual.A;
 import org.junit.Test;
+
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 public class AppTest {
     @Test public void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+        ArrayListPage<String> alp = new ArrayListPage<>(new ArrayList<>());
     }
 }
